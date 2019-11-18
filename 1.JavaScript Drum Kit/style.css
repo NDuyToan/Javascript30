@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    
+    background-color: rgb(44, 41, 40);
+    height: 1000px;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+.keys{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.key{
+    border: 3px solid black;
+    color: white;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 50px;
+    transition: all 0.1s;
+}
+kbd{
+    font-size: 4rem;
+    display: block;
+    text-align: center;
+}
+.sound{
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    color:#ffc600;
+}
+.playing{
+    transform: scale(1.1);
+    border-color:#ffc600 ;
+    box-shadow: 0 0  10px #ffc600;
+}
