@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --spacing:10px;
+    --blur:0px;
+    --baseColor:#ffc600;  
+}
+img{
+    padding: var(--spacing);
+    background-color: var(--baseColor);
+    filter: blur(var(--blur));
+}
+.js{
+    color:var(--baseColor);
+}
+
+html{
+    
+    margin: auto;
+    background-color: #2D9AEB;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+.controls{
+    margin-bottom: 50px;
+}
