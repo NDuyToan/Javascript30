@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    background-color: #31302e;
+}
+.player{
+   max-width: 800px;
+    margin: 50px auto;
+    
+}
+.player_video{
+    width:100%;
+}
+.player_controls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.progress{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    margin-bottom:10px;
+    background-color: hsla(43, 30%, 95%, 0.59);
+    cursor: ew-resize;
+    /* opacity: 0.5; */
+}
+.progress_filled{
+    height: 20px;
+    flex-basis: 0%;
+    background-color: #ffc600;
+}
+
+.toggle{
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(49, 47, 47);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.player_slider{
+   
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin: 0 5px;
+    flex: 2;
+    height: 25px;
+}
+.player_slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .player_slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .player_slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+.player_button{
+    width:50px;
+    margin: 0 5px;
+    background-color: rgba(235, 221, 221, 0.548);
+}
+.toggle:focus{
+    outline: none;
+}
+.toggle:hover , .player_button:hover, .player_slider:hover{
+    cursor: pointer;
+}
+
+
