@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    background-color: #e2d39ad7;
+  
+}
+.videos{
+    width:100px;
+    padding: 10px;
+    margin: 100px 100px;
+}
