@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object and Arrays - Reference VS Copy </title>
+
+</head>
+
+<body>
+    <script>
+        // start with strings, numbers and booleans
+        // let age = 100;
+        // let age2 = age;
+        // console.log(age,age2);
+        // age = 200;
+        // console.log(age,age2);
+
+        // let name = 'hihi';
+        // let name2 = name;
+        // console.log(name, name2);
+        // name = 'haha';
+        // console.log(name, name2);
+        //Let's say we have an array
+        const player = ['aa', 'bb', 'cc', 'dd'];
+        //and we want make a copy of it
+        const team = player;
+        // player[3] = 'ee';
+        //how to fix it
+        const team2 = player.slice();
+        const team3 = [].concat(player);
+        const team4 = [...player];
+        const team5 = Array.from(player);
+        // with Objects
+        const person = {
+            name: 'LA LA',
+            age: 80
+        };
+        // const captain = person;
+        // captain.number = 99;
+        const person2 = Object.assign({},person,{number: 99, age: 100});
+       const person3 = {...person};
+       person3.age = 11;
+
+       //deep clone
+       const wes = {
+      name: 'Wes',
+      age: 100,
+      social: {
+        twitter: '@wesbos',
+        facebook: 'wesbos.developer'
+      }
+    };
+    const lala = JSON.parse( JSON.stringify(wes));
+    lala.social.facebook = 'face of lala';
+
+
+    </script>
+
+
+
+</body>
+
+</html>
