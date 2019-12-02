@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GAME CARO </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h3>GAME CARO</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <p>Nhập số hàng,côt: </p>
+            </div>
+            <div class="col-md-2">
+                <input type="number" id="rowCol" class="form-control m-2" placeholder="n>=3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <p>Nhập số ô liên tiếp để thắng:  </p>
+            </div>
+            <div class="col-md-2">
+                    <input type="number" id="number" class="form-control m-2" placeholder="m>=3">
+                </div>
+        </div>
+        <div class="row m-4">
+            <div class="col-md-1">
+                <button type="button" class="btn btn-warning" id="btnReset" disabled>Reset</button>
+            </div>
+            <!-- <div class="col-md-2">
+                <span>Player X: </span>
+                <span id="playerX">0</span>
+            </div>
+            <div class="col-md-2">
+                <span>Player O: </span>
+                <span id="playerO">0</span>
+            </div> -->
+        </div>
+        <div class="row m-4">
+            <span > Người thằng là: </span>
+            <span id="winner"></span>
+        </div>
+        <div class="row m-4">
+            <div class="col-md-4">
+                <table class="table table-bordered ">
+                    <tbody id="tableGame">
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="js/myJS.js"></script>
+</body>
+
+</html>
